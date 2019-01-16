@@ -1,25 +1,35 @@
+import.java.util.*;
+import java.lang.Math;
 class Quadratic
 {
 	public static void main(String args[])
 	{
-	double a=2.3,b=4,c=5.6 ;
-	double root1,root2;
-	double determinant=b*b-4*a*c;
-		if(determinant>0){
-		root1 = (-b+ Math.sqrt(determinant))/(2*a);
-		root2 = (-b+Math.sqrt(determinant))/(2*a
-		);
-		system.out.format("root1=%.2f and root2=%.2f,root1,root2");
+	int a,b,c,d,root1,root2 ;
+	
+	 
+	 Scanner scan=new Scanner(System.in);
+	 System.out.println(given equation ax^2+bx+c);
+	 System.out.println("Enter a");
+	 a=scan.nextInt();
+	 System.out.println("Enter b");
+	 b=scan.nextInt();
+	 System.out.println("Enter c");
+	 c=scan.nextInt();
+	 d=b*b-4*a*c;
+		if(d>0){
+		root1 = (-b+ Math.sqrt(d))/(2*a);
+		root2 = (-b+Math.sqrt(d))/(2*a);
+		
+		system.out.println("root1=%.2f and root2=%.2f,root1,root2");
 
 		}
-		else if(determinant==0){
+		else if(d==0){
 		root1=root2=-b/(2*a);
-		System.out.forat("root1=root2=%.2f",root1);
+		System.out.println("root1=root2=%.2f",root1);
 		}
 		else{
-		double realpart= -b/(2*a);
-		double imaginary part = Math.sqrt(-determinant)/(2*a);
-		System.out.format("root1 = %.2f+%.2fi and root2 = %.2f-%.2fi", realPart, imaginaryPart, realPart, imaginaryPart);
+		
+		System.out.println("roots are imaginary");
 		}
 	}
 }
