@@ -12,13 +12,13 @@ class Box
 	Box(double w,double h,double d)
 	{
 		this.width=w;
-		this.heigth=h;
+		this.height=h;
 		this.depth=d;
 	}
 	Box()
 	{
 	this.width=0;
-	this.heigth=0;
+	this.height=0;
 	this.depth=0;
 	}
 	double volume()
@@ -29,17 +29,19 @@ class Box
 	}
 
 }
-class BoxDemo
+ class BoxDemo
 {
 	public static void main(String args [])
 	{
 	Box myBox=new Box(4,5,6);
     double vol=myBox.volume();
-	System.out.println("volume after using constructors:"=vol);
+	System.out.println("volume after using constructors:"+vol);
 	myBox.setDim();
 	double volume=myBox.volume();
 	System.out.println("volume:"+volume);
      
-     System.out.println("volume after using constructors:"=volume);
+     System.out.println("volume after using constructors:"+volume);
+	System.out.println(myBox instanceof Box);
 	}
+
 }

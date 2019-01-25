@@ -3,11 +3,11 @@ class floating
 {
 	public static void main(String args[])
 	{
-	Scanner in= new Scanner(System.in);
+	Scanner scan= new Scanner(System.in);
 	System.out.println("one folating number is :");
-	double x=in.nextDouble();
+	double x=scan.nextDouble();
 	System.out.println("other floating number is :");
-	double y = in.nextDouble();
+	double y = scan.nextDouble();
 	x=Math.round(x*1000);
 	x=x/1000;
 	y=Math.round(y*1000);
