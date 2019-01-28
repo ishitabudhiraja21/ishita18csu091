@@ -1,22 +1,20 @@
 class Qualification
 {
-	String qualName;
-String university;
-String institute;
-int cgpa;
-Qualification(String qualName,String university,String institute,int cgpa)
-{
-	this.qualName=qualName;
-	this.university=university;
-	this.institute=institute;
-	this.cgpa=cgpa;
-}
-void display()
-{
-	System.out.println("Qualification:"+qualName);
-	System.out.println("university:"+university);
-	System.out.println("institute:"+institute);
-	System.out.println("cgpa;"+cgpa);
-}
 
+	String qualName;
+	String university;
+	String institute;
+	float cgpa;
+  Qualification(String qualName, String university, String institute, float cgpa)
+    { 
+        this.qualName = qualName;
+        this.university = university;
+        this.institute = institute;
+  		this.cgpa = cgpa;
+  	}
+  public String displayQualifications()
+  {
+    System.out.println("Qualification Name: " + qualName + "\nUniversity Name: " + university + "\nInstitute Name: " + institute + "\nCGPA: " + cgpa);
+    return "";
+  }
 }
