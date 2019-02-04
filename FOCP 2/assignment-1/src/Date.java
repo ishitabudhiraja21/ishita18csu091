@@ -1,4 +1,5 @@
-class Date 
+package com.ncu.assignment.classes;
+public class Date 
 {
  int month;
  int day;

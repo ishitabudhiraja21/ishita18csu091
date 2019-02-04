@@ -1,4 +1,5 @@
-class Project
+package com.ncu.assignment.classes;
+public class Project
 {
 String name;
 Date startDate;

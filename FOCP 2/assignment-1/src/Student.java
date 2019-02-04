@@ -1,4 +1,5 @@
-class Student
+package com.ncu.assignment.classes;
+public class Student
 {
   String firstName,lastName,line1, line2, city, state,eMail,contactNo;
   Address addr;

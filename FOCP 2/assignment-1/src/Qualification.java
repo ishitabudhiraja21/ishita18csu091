@@ -1,4 +1,5 @@
-class Qualification
+package com.ncu.assignment.classes;
+public class Qualification
 {
 
 	String qualName;
